@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.quizapp"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.quizapp"
@@ -26,6 +26,9 @@ android {
             )
         }
     }
+buildFeatures{
+    viewBinding = true
+}
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
